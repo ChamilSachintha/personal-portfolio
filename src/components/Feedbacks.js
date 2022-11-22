@@ -48,7 +48,7 @@ export const Feedbacks = () => {
                                 <Card className="bg-dark text-white">
                                     {/* <Card.Img src={bg} alt="Card image" /> */}
                                         <Card.ImgOverlay>
-                                            <a href="https://www.fiverr.com/share/V3wmAV">
+                                            <a href="https://www.fiverr.com/share/V3wmAV" target="_blank">
                                             <Card.Title>cannoneye</Card.Title>
                                             <h6><span class="au au-gr"></span>Australia&nbsp;
                                             <Flag
@@ -68,7 +68,7 @@ export const Feedbacks = () => {
                             <Card className="bg-dark text-white">
                                     {/* <Card.Img src="holder.js/100px270" alt="Card image" /> */}
                                         <Card.ImgOverlay>
-                                        <a href="https://www.fiverr.com/share/V3wmAV">
+                                        <a href="https://www.fiverr.com/share/V3wmAV" target="_blank">
                                             <Card.Title>familiaoffice</Card.Title>
                                             <h6>Japan&nbsp;
                                             <Flag
@@ -90,7 +90,7 @@ export const Feedbacks = () => {
                                 <Card className="bg-dark text-white">
                                     {/* <Card.Img src="holder.js/100px270" alt="Card image" /> */}
                                         <Card.ImgOverlay>
-                                        <a href="https://www.fiverr.com/share/V3wmAV">
+                                        <a href="https://www.fiverr.com/share/V3wmAV" target="_blank">
                                             <Card.Title>vasile96</Card.Title>
                                             <h6>United Kingdom&nbsp;
                                             <Flag
@@ -111,7 +111,7 @@ export const Feedbacks = () => {
                             <Card className="bg-dark text-white">
                                     {/* <Card.Img src="holder.js/100px270" alt="Card image" /> */}
                                         <Card.ImgOverlay>
-                                        <a href="https://www.fiverr.com/share/WDwdWl">
+                                        <a href="https://www.fiverr.com/share/WDwdWl" target="_blank">
                                             <Card.Title>sergiosombrao</Card.Title>
                                             <h6>Brazil&nbsp;
                                             <Flag
@@ -132,7 +132,7 @@ export const Feedbacks = () => {
                             <Card className="bg-dark text-white">
                                     {/* <Card.Img src="holder.js/100px270" alt="Card image" /> */}
                                         <Card.ImgOverlay>
-                                            <a href="https://www.fiverr.com/share/WDwdWl">
+                                            <a href="https://www.fiverr.com/share/WDwdWl" target="_blank">
                                             <Card.Title>hussain629</Card.Title>
                                             <h6>Hong Kong&nbsp;
                                             <Flag
@@ -153,7 +153,7 @@ export const Feedbacks = () => {
                             <Card className="bg-dark text-white">
                                     {/* <Card.Img src="holder.js/100px270" alt="Card image" /> */}
                                         <Card.ImgOverlay>
-                                        <a href="https://www.fiverr.com/share/V3wmAV">
+                                        <a href="https://www.fiverr.com/share/V3wmAV" target="_blank">
                                             <Card.Title>familiaoffice</Card.Title>
                                             <h6>Japan&nbsp;
                                             <Flag
@@ -170,7 +170,7 @@ export const Feedbacks = () => {
                                 </Card>
                             </div>
                             <div className="item">
-                                <a href="https://www.fiverr.com/chamil_s">
+                                <a href="https://www.fiverr.com/chamil_s" target="_blank">
                                 <img src={fiverr} alt="Image" />
                                 <h5>Show more feedback</h5>
                                 <h5>in Fiverr</h5>
