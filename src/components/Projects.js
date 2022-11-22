@@ -3,12 +3,14 @@ import { ProjectCard1 } from "./ProjectCards/ProjectCard1";
 import { ProjectCard2 } from "./ProjectCards/ProjectCard2";
 import { ProjectCard3 } from "./ProjectCards/ProjectCard3";
 import { ProjectCard4 } from "./ProjectCards/ProjectCard4";
+import { ProjectCard5 } from "./ProjectCards/ProjectCard5";
 import TrackVisibility from 'react-on-screen';
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
 
 export const Projects = () => {
 
@@ -76,6 +78,22 @@ export const Projects = () => {
             imgUrl4: projImg4,
         },
 
+        {
+            title5: "Student Progress Viewer for Universities",
+            description5: "Figma UI/UX design for a web application",
+            imgUrl5: projImg5,
+        },
+        {
+            title5: "Student Progress Viewer for Universities",
+            description5: "Figma UI/UX design for a web application",
+            imgUrl5: projImg5,
+        },
+        {
+            title5: "Student Progress Viewer for Universities",
+            description5: "Figma UI/UX design for a web application",
+            imgUrl5: projImg5,
+        }
+
     ]
     return (
         <section className="project" id="project">
@@ -119,7 +137,7 @@ export const Projects = () => {
                                     </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    <a href="https://github.com/ChamilSachintha/Pharmacy-Management-System" target="_blank">
+                                    <a href="https://github.com/ChamilSachintha/personal-portfolio" target="_blank">
                                         <Row>
                                             {
                                                 Projects.map((project, index) => {
@@ -135,13 +153,26 @@ export const Projects = () => {
                                     </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                    <Row>
                                         <a href="https://www.figma.com/file/08BeH4Xv1yw2M819bzyFzS/Design-1?t=jZK3aOJNwAHjyEXN-1" target="_blank">
                                             <Row>
                                                 {
                                                     Projects.map((project, index) => {
                                                         return (
                                                             <ProjectCard2
+                                                                key={index}
+                                                                {...project}
+                                                            />
+                                                        )
+                                                    })
+                                                }
+                                            </Row>
+                                        </a>
+                                        <a href="https://www.figma.com/file/z43S0OGbQfysKm7UnrVPN7/Untitled?node-id=0%3A1&t=hZ2sHzDIn2XEXvpB-1" target="_blank">
+                                            <Row>
+                                                {
+                                                    Projects.map((project, index) => {
+                                                        return (
+                                                            <ProjectCard5
                                                                 key={index}
                                                                 {...project}
                                                             />
@@ -164,7 +195,6 @@ export const Projects = () => {
                                                 }
                                             </Row>
                                         </a>
-                                    </Row>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
