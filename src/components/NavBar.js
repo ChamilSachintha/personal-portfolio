@@ -47,10 +47,10 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/chamilsachintha96"><img src={navIcon1} alt="" /></a>
-                            <a href="https://github.com/ChamilSachintha"><img src={navIcon4} alt="" /></a>
-                            <a href="https://www.facebook.com/chamil.sachintha"><img src={navIcon2} alt="" /></a>
-                            <a href="https://www.instagram.com/chamil_sachintha/"><img src={navIcon3} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/chamilsachintha96" target="_blank"><img src={navIcon1} alt="" /></a>
+                            <a href="https://github.com/ChamilSachintha" target="_blank"><img src={navIcon4} alt="" /></a>
+                            <a href="https://www.facebook.com/chamil.sachintha" target="_blank"><img src={navIcon2} alt="" /></a>
+                            <a href="https://www.instagram.com/chamil_sachintha/" target="_blank"><img src={navIcon3} alt="" /></a>
                         </div>
                         <a href="https://drive.google.com/file/d/1p8dqvrfGXud8TBt_ZcEt3CkgTJdo9KGH/view?usp=sharing" target="_blank">
                         <button className="vvd" onClick={() => console.log('connect')}><span>View CV</span></button>
