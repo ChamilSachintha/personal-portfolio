@@ -52,7 +52,9 @@ export const NavBar = () => {
                             <a href="https://www.facebook.com/chamil.sachintha"><img src={navIcon2} alt="" /></a>
                             <a href="https://www.instagram.com/chamil_sachintha/"><img src={navIcon3} alt="" /></a>
                         </div>
+                        <a href="https://drive.google.com/file/d/1p8dqvrfGXud8TBt_ZcEt3CkgTJdo9KGH/view?usp=sharing" target="_blank">
                         <button className="vvd" onClick={() => console.log('connect')}><span>View CV</span></button>
+                        </a>
                     </span>
                 </Navbar.Collapse>
             </Container>
