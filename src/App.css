@@ -549,6 +549,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.project a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* visited link */
+.project a:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+.project a:hover {
+  color: rgb(255, 255, 255);
+}
+
 
 /* Footer CSS */
 .footer {
