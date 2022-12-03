@@ -4,13 +4,24 @@ import { ProjectCard2 } from "./ProjectCards/ProjectCard2";
 import { ProjectCard3 } from "./ProjectCards/ProjectCard3";
 import { ProjectCard4 } from "./ProjectCards/ProjectCard4";
 import { ProjectCard5 } from "./ProjectCards/ProjectCard5";
+import { ProjectCard6 } from "./ProjectCards/ProjectCard6";
+
 import TrackVisibility from 'react-on-screen';
+import { CardActions } from '@mui/material';
+import Card from 'react-bootstrap/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
 
 export const Projects = () => {
 
@@ -92,6 +103,22 @@ export const Projects = () => {
             title5: "Student Progress Viewer for Universities",
             description5: "Figma UI/UX design for a web application",
             imgUrl5: projImg5,
+        },
+
+        {
+            title6: "Student Progress Viewer for Universities",
+            description5: "Front-end application | React, React-bootstrap & Animate.css",
+            imgUrl6: projImg6,
+        },
+        {
+            title6: "Student Progress Viewer for Universities",
+            description5: "Front-end application | React, React-bootstrap & Animate.css",
+            imgUrl6: projImg6,
+        },
+        {
+            title6: "Student Progress Viewer for Universities",
+            description5: "Front-end application | React, React-bootstrap & Animate.css",
+            imgUrl6: projImg6,
         }
 
     ]
@@ -151,50 +178,64 @@ export const Projects = () => {
                                             }
                                         </Row>
                                     </a>
+                                    <a href="https://github.com/ChamilSachintha/Student-Progress-Viewer" target="_blank">
+                                        <Row>
+                                            {
+                                                Projects.map((project, index) => {
+                                                    return (
+                                                        <ProjectCard6
+                                                            key={index}
+                                                            {...project}
+                                                        />
+                                                    )
+                                                })
+                                            }
+                                        </Row>
+                                    </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                        <a href="https://www.figma.com/file/08BeH4Xv1yw2M819bzyFzS/Design-1?t=jZK3aOJNwAHjyEXN-1" target="_blank">
-                                            <Row>
-                                                {
-                                                    Projects.map((project, index) => {
-                                                        return (
-                                                            <ProjectCard2
-                                                                key={index}
-                                                                {...project}
-                                                            />
-                                                        )
-                                                    })
-                                                }
-                                            </Row>
-                                        </a>
-                                        <a href="https://www.figma.com/file/z43S0OGbQfysKm7UnrVPN7/Untitled?node-id=0%3A1&t=hZ2sHzDIn2XEXvpB-1" target="_blank">
-                                            <Row>
-                                                {
-                                                    Projects.map((project, index) => {
-                                                        return (
-                                                            <ProjectCard5
-                                                                key={index}
-                                                                {...project}
-                                                            />
-                                                        )
-                                                    })
-                                                }
-                                            </Row>
-                                        </a>
-                                        <a href="https://www.figma.com/file/IPv7RZ6prAhNObLnDxr76Z/UI%2FUX-Design-for-Academic-Calendar?node-id=0%3A1&t=jZK3aOJNwAHjyEXN-1" target="_blank">
-                                            <Row>
-                                                {
-                                                    Projects.map((project, index) => {
-                                                        return (
-                                                            <ProjectCard3
-                                                                key={index}
-                                                                {...project}
-                                                            />
-                                                        )
-                                                    })
-                                                }
-                                            </Row>
-                                        </a>
+                                    <a href="https://www.figma.com/file/08BeH4Xv1yw2M819bzyFzS/Design-1?t=jZK3aOJNwAHjyEXN-1" target="_blank">
+                                        <Row>
+                                            {
+                                                Projects.map((project, index) => {
+                                                    return (
+                                                        <ProjectCard2
+                                                            key={index}
+                                                            {...project}
+                                                        />
+                                                    )
+                                                })
+                                            }
+                                        </Row>
+                                    </a>
+                                    <a href="https://www.figma.com/file/z43S0OGbQfysKm7UnrVPN7/Untitled?node-id=0%3A1&t=hZ2sHzDIn2XEXvpB-1" target="_blank">
+                                        <Row>
+                                            {
+                                                Projects.map((project, index) => {
+                                                    return (
+                                                        <ProjectCard5
+                                                            key={index}
+                                                            {...project}
+                                                        />
+                                                    )
+                                                })
+                                            }
+                                        </Row>
+                                    </a>
+                                    <a href="https://www.figma.com/file/IPv7RZ6prAhNObLnDxr76Z/UI%2FUX-Design-for-Academic-Calendar?node-id=0%3A1&t=jZK3aOJNwAHjyEXN-1" target="_blank">
+                                        <Row>
+                                            {
+                                                Projects.map((project, index) => {
+                                                    return (
+                                                        <ProjectCard3
+                                                            key={index}
+                                                            {...project}
+                                                        />
+                                                    )
+                                                })
+                                            }
+                                        </Row>
+                                    </a>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>

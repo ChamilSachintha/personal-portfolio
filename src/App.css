@@ -700,3 +700,12 @@ a:visited {
 .feedback a:hover {
   color: rgb(176, 101, 255);
 }
+
+/* Card CSS */
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  width: 40%;
+  border-radius: 60px;
+}
