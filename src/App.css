@@ -706,6 +706,6 @@ a:visited {
   margin: 0 auto; /* Added */
   float: none; /* Added */
   margin-bottom: 10px; /* Added */
-  width: 40%;
+  /* width: 40%; */
   border-radius: 60px;
 }
