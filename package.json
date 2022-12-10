@@ -6,7 +6,9 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@mui/material": "^5.10.16",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/joy": "^5.0.0-alpha.57",
+    "@mui/material": "^5.10.17",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,6 +17,7 @@
     "cors": "^2.8.5",
     "country-flag-icons": "^1.5.5",
     "express": "^4.18.2",
+    "file-loader": "^6.2.0",
     "flag-icons": "^6.6.6",
     "flagpack": "^1.0.5",
     "nodemailer": "^6.8.0",
@@ -28,6 +31,7 @@
     "react-multi-carousel": "^2.8.2",
     "react-on-screen": "^2.1.1",
     "react-scripts": "5.0.1",
+    "url-loader": "^4.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

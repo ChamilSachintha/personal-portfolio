@@ -7,13 +7,18 @@ import { ProjectCard5 } from "./ProjectCards/ProjectCard5";
 import { ProjectCard6 } from "./ProjectCards/ProjectCard6";
 
 import TrackVisibility from 'react-on-screen';
-import { CardActions } from '@mui/material';
-import Card from 'react-bootstrap/Card';
 import CardActionArea from '@mui/material/CardActionArea';
+
+import * as React from 'react';
+import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+
+import Card from '@mui/joy/Card';
+import CardCover from '@mui/joy/CardCover';
+import CardContent from '@mui/joy/CardContent';
+import Typography from '@mui/joy/Typography';
+import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
@@ -31,26 +36,7 @@ export const Projects = () => {
             description1: "Full-stack application | HTML5, CSS3 & PHP",
             imgUrl1: projImg1,
         },
-        {
-            title1: "Pharmacy Management System",
-            description1: "Full-stack application | HTML5, CSS3 & PHP",
-            imgUrl1: projImg1,
-        },
-        {
-            title1: "Pharmacy Management System",
-            description1: "Full-stack application | HTML5, CSS3 & PHP",
-            imgUrl1: projImg1,
-        },
-        {
-            title2: "TODO App",
-            description2: "Figma UI/UX design for a mobile application",
-            imgUrl2: projImg2,
-        },
-        {
-            title2: "TODO App",
-            description2: "Figma UI/UX design for a mobile application",
-            imgUrl2: projImg2,
-        },
+        
         {
             title2: "TODO App",
             description2: "Figma UI/UX design for a mobile application",
@@ -62,27 +48,7 @@ export const Projects = () => {
             description3: "Figma UI/UX design for a web application",
             imgUrl3: projImg3,
         },
-        {
-            title3: "Academic Calendar for Universities",
-            description3: "Figma UI/UX design for a web application",
-            imgUrl3: projImg3,
-        },
-        {
-            title3: "Academic Calendar for Universities",
-            description3: "Figma UI/UX design for a web application",
-            imgUrl3: projImg3,
-        },
 
-        {
-            title4: "Personal Portfolio Website",
-            description4: "Front-end application | React, React-bootstrap & Animate.css",
-            imgUrl4: projImg4,
-        },
-        {
-            title4: "Personal Portfolio Website",
-            description4: "Front-end application | React, React-bootstrap & Animate.css",
-            imgUrl4: projImg4,
-        },
         {
             title4: "Personal Portfolio Website",
             description4: "Front-end application | React, React-bootstrap & Animate.css",
@@ -94,27 +60,7 @@ export const Projects = () => {
             description5: "Figma UI/UX design for a web application",
             imgUrl5: projImg5,
         },
-        {
-            title5: "Student Progress Viewer for Universities",
-            description5: "Figma UI/UX design for a web application",
-            imgUrl5: projImg5,
-        },
-        {
-            title5: "Student Progress Viewer for Universities",
-            description5: "Figma UI/UX design for a web application",
-            imgUrl5: projImg5,
-        },
-
-        {
-            title6: "Student Progress Viewer for Universities",
-            description5: "Front-end application | React, React-bootstrap & Animate.css",
-            imgUrl6: projImg6,
-        },
-        {
-            title6: "Student Progress Viewer for Universities",
-            description5: "Front-end application | React, React-bootstrap & Animate.css",
-            imgUrl6: projImg6,
-        },
+        
         {
             title6: "Student Progress Viewer for Universities",
             description5: "Front-end application | React, React-bootstrap & Animate.css",
@@ -150,7 +96,7 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="first">
                                     <a href="https://github.com/ChamilSachintha/Pharmacy-Management-System" target="_blank">
                                         <Row>
-                                            {
+                                        {/* {
                                                 Projects.map((project, index) => {
                                                     return (
                                                         <ProjectCard1
@@ -159,7 +105,26 @@ export const Projects = () => {
                                                         />
                                                     )
                                                 })
-                                            }
+                                            } */}
+                                            <Card sx={{ maxWidth: 345 }}>
+                                                <CardMedia className="proj-imgbx"
+                                                    alt="green iguana"
+                                                    image={projImg1}
+                                                />
+                                                {/* <CardContent>
+                                                    <Typography gutterBottom variant="h5" component="div">
+                                                        Lizard
+                                                    </Typography>
+                                                    <Typography variant="body2" color="text.secondary">
+                                                        Lizards are a widespread group of squamate reptiles, with over 6,000
+                                                        species, ranging across all continents except Antarctica
+                                                    </Typography>
+                                                </CardContent>
+                                                <CardActions>
+                                                    <Button size="small">Share</Button>
+                                                    <Button size="small">Learn More</Button>
+                                                </CardActions> */}
+                                            </Card>
                                         </Row>
                                     </a>
                                 </Tab.Pane>

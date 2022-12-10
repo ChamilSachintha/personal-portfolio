@@ -489,11 +489,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 
+.proj-img {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  height: 275px;
+  width: 325px;
+}
+
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 275px;
+  width: 325px;
 }
 
 .proj-imgbx::before {
