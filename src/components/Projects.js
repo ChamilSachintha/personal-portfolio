@@ -36,38 +36,40 @@ export const Projects = () => {
             description1: "Full-stack application | HTML5, CSS3 & PHP",
             imgUrl1: projImg1,
         },
-        
+
         {
-            title2: "TODO App",
-            description2: "Figma UI/UX design for a mobile application",
-            imgUrl2: projImg2,
+            title1: "TODO App",
+            description1: "Figma UI/UX design for a mobile application",
+            imgUrl1: projImg2,
         },
 
         {
-            title3: "Academic Calendar for Universities",
-            description3: "Figma UI/UX design for a web application",
-            imgUrl3: projImg3,
+            title2: "Academic Calendar for Universities",
+            description2: "Figma UI/UX design for a web application",
+            imgUrl2: projImg3,
         },
 
         {
-            title4: "Personal Portfolio Website",
-            description4: "Front-end application | React, React-bootstrap & Animate.css",
-            imgUrl4: projImg4,
+            title2: "Personal Portfolio Website",
+            description2: "Front-end application | React, React-bootstrap & Animate.css",
+            imgUrl2: projImg4,
         },
 
         {
-            title5: "Student Progress Viewer for Universities",
-            description5: "Figma UI/UX design for a web application",
-            imgUrl5: projImg5,
+            title2: "Student Progress Viewer for Universities",
+            description2: "Figma UI/UX design for a web application",
+            imgUrl2: projImg5,
         },
-        
-        {
-            title6: "Student Progress Viewer for Universities",
-            description5: "Front-end application | React, React-bootstrap & Animate.css",
-            imgUrl6: projImg6,
-        }
 
-    ]
+        {
+            title3: "Student Progress Viewer for Universities",
+            description3: "Front-end application | React, React-bootstrap & Animate.css",
+            imgUrl3: projImg6,
+        },
+
+    ];
+
+
     return (
         <section className="project" id="project">
             <Container>
@@ -96,34 +98,29 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="first">
                                     <a href="https://github.com/ChamilSachintha/Pharmacy-Management-System" target="_blank">
                                         <Row>
-                                        {/* {
-                                                Projects.map((project, index) => {
-                                                    return (
-                                                        <ProjectCard1
-                                                            key={index}
-                                                            {...project}
-                                                        />
-                                                    )
-                                                })
-                                            } */}
                                             <Card sx={{ maxWidth: 345 }}>
-                                                <CardMedia className="proj-imgbx"
-                                                    alt="green iguana"
-                                                    image={projImg1}
-                                                />
-                                                {/* <CardContent>
-                                                    <Typography gutterBottom variant="h5" component="div">
-                                                        Lizard
-                                                    </Typography>
-                                                    <Typography variant="body2" color="text.secondary">
-                                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                                        species, ranging across all continents except Antarctica
-                                                    </Typography>
-                                                </CardContent>
+                                                <CardActionArea>
+                                                    <CardMedia className="proj-imgbx"
+                                                        component="img"
+                                                        height="140"
+                                                        image={projImg1}
+                                                        alt="green iguana"
+                                                    />
+                                                    <CardContent>
+                                                        <Typography gutterBottom variant="h5" component="div">
+                                                            Lizard
+                                                        </Typography>
+                                                        <Typography variant="body2" color="text.secondary">
+                                                            Lizards are a widespread group of squamate reptiles, with over 6,000
+                                                            species, ranging across all continents except Antarctica
+                                                        </Typography>
+                                                    </CardContent>
+                                                </CardActionArea>
                                                 <CardActions>
-                                                    <Button size="small">Share</Button>
-                                                    <Button size="small">Learn More</Button>
-                                                </CardActions> */}
+                                                    <Button size="small" color="primary">
+                                                        Share
+                                                    </Button>
+                                                </CardActions>
                                             </Card>
                                         </Row>
                                     </a>
@@ -134,7 +131,7 @@ export const Projects = () => {
                                             {
                                                 Projects.map((project, index) => {
                                                     return (
-                                                        <ProjectCard4
+                                                        <ProjectCard2
                                                             key={index}
                                                             {...project}
                                                         />
