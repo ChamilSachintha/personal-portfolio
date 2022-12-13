@@ -98,47 +98,81 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="first">
                                     <a href="https://github.com/ChamilSachintha/Pharmacy-Management-System" target="_blank">
                                         <Row>
-                                            <Card sx={{ maxWidth: 345 }}>
-                                                <CardActionArea>
-                                                    <CardMedia className="proj-imgbx"
-                                                        component="img"
-                                                        height="140"
-                                                        image={projImg1}
-                                                        alt="green iguana"
-                                                    />
-                                                    <CardContent>
-                                                        <Typography gutterBottom variant="h5" component="div">
-                                                            Lizard
-                                                        </Typography>
-                                                        <Typography variant="body2" color="text.secondary">
-                                                            Lizards are a widespread group of squamate reptiles, with over 6,000
-                                                            species, ranging across all continents except Antarctica
-                                                        </Typography>
-                                                    </CardContent>
-                                                </CardActionArea>
-                                                <CardActions>
-                                                    <Button size="small" color="primary">
-                                                        Share
-                                                    </Button>
-                                                </CardActions>
-                                            </Card>
+                                            <div class="proj-container">
+                                                <div class="card">
+                                                    <div class="face face1">
+                                                        <div class="content">
+                                                            <div class="icon">
+                                                                <img src={projImg1} />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="face face2">
+                                                        <div class="content">
+                                                            <h3>
+                                                                <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                                                            </h3>
+                                                            <p>This is where I network and build my professional protfolio.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="face face1">
+                                                        <div class="content">
+                                                            <div class="icon">
+                                                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="face face2">
+                                                        <div class="content">
+                                                            <h3>
+                                                                <a href="https://twitter.com/AdamDipinto" target="_blank">@AdamDipinto</a>
+                                                            </h3>
+                                                            <p>This is where I read news and network with different social groups.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="face face1">
+                                                        <div class="content">
+                                                            <div class="icon">
+                                                                <i class="fa fa-github-square" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="face face2">
+                                                        <div class="content">
+                                                            <h3>
+                                                                <a href="https://github.com/atom888" target="_blank">atom888</a>
+                                                            </h3>
+                                                            <p>This is where I share code and work on projects.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </Row>
                                     </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
                                     <a href="https://github.com/ChamilSachintha/personal-portfolio" target="_blank">
-                                        <Row>
-                                            {
-                                                Projects.map((project, index) => {
-                                                    return (
-                                                        <ProjectCard2
-                                                            key={index}
-                                                            {...project}
-                                                        />
-                                                    )
-                                                })
-                                            }
-                                        </Row>
+                                        <div class="cards">
+                                            <div class="card">
+                                                <img src={projImg2} alt="" />
+                                                <p class="card-desc">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse clade of carnivorous, fin-footed,.</p>
+                                            </div>
+                                            <div class="card">
+                                                <h2 class="card-title">Lion</h2>
+                                                <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="" />
+                                                <p class="card-desc">The lion (Panthera leo) is a species in the family Felidae and a member of the genus Panthera. It has a muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail. It is sexually dimorphic; adult male lions have a prominent mane.</p>
+                                            </div>
+                                            <div class="card">
+                                                <h2 class="card-title">Hawk</h2>
+                                                <img src="https://images.unsplash.com/photo-1534251369789-5067c8b8602a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="" />
+                                                <p class="card-desc">Hawks are a group of medium-sized diurnal birds of prey of the family Accipitridae. Hawks are widely distributed and vary greatly in size.
+                                                    The subfamily Accipitrinae includes goshawks, sparrowhawks, sharp-shinned hawks and others. This subfamily are mainly woodland birds with long tails and high visual acuity. They hunt by dashing suddenly from a concealed perch.</p>
+                                            </div>
+                                        </div>
                                     </a>
                                     <a href="https://github.com/ChamilSachintha/Student-Progress-Viewer" target="_blank">
                                         <Row>
